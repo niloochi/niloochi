@@ -14,8 +14,13 @@
                 <div class="nav-link-wrapper">
                     <a href="Main-Page.html">Home</a>
                 </div>
+
                 <div class="nav-link-wrapper">
                     <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="Portfolio.html">Portfolio</a>
                 </div>
             </div>
 
@@ -111,23 +116,25 @@
         </div>
 
     </div>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      
+        portfolioItems.forEach(portfolioItem => {
+          portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+          });
+      
+          portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+          });
+        });
+      
+      </script>    
 </body>  
 
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-  
-    portfolioItems.forEach(portfolioItem => {
-      portfolioItem.addEventListener('mouseover', () => {
-        console.log(portfolioItem.childNodes[1].classList)
-        portfolioItem.childNodes[1].classList.add('image-blur');
-      });
-  
-      portfolioItem.addEventListener('mouseout', () => {
-        console.log(portfolioItem.childNodes[1].classList)
-        portfolioItem.childNodes[1].classList.remove('image-blur');
-      });
-    });
-  
-  </script>
+
 
 </html>
