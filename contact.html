@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>contact</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="contact-form.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="Portfolio.html">Portfolio</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="contact.html">contact</a>
+        </div>
+      
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Niloofar Ghaffari
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="two-column-wrapper">
+        <div class="profile-image-wrapper">
+          <img src="images/02.jpg" alt="">
+        </div>
+
+        <div class="profile-content-wrapper">
+          <h1>Contact us!</h1>
+
+         <div class="fcf-body">
+
+          <div id="fcf-form">
+          <h3 class="fcf-h3">Contact us</h3>
+      
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+              
+              <div class="fcf-form-group">
+                  <label for="Name" class="fcf-label">Your name</label>
+                  <div class="fcf-input-group">
+                      <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                  </div>
+              </div>
+      
+              <div class="fcf-form-group">
+                  <label for="Email" class="fcf-label">Your email address</label>
+                  <div class="fcf-input-group">
+                      <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                  </div>
+              </div>
+      
+              <div class="fcf-form-group">
+                  <label for="Message" class="fcf-label">Your message</label>
+                  <div class="fcf-input-group">
+                      <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                  </div>
+              </div>
+      
+              <div class="fcf-form-group">
+                  <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+              </div>
+      
+              
+      
+          </form>
+          </div>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+</body>
+
+</html>
